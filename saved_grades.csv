@@ -1,0 +1,43 @@
+Roll_No,Student_Name,Branch,Semester,Subject,Course_Type,Credits,Mid_Sem,Assignments,End_Sem,Total_Marks,Letter_Grade,Grade_Point,Credit_Points,Attendance,Status
+2026CS101,Alex Johnson,BS Data Science,Semester 3,Python Programming,Theory,4,21.7,19.6,43.2,84.5,A+,9,36,88,Pass
+2026CS101,Alex Johnson,BS Data Science,Semester 3,Data Structures & Algorithms,Theory,4,19.6,13.2,31.0,63.8,B+,7,28,68,Detained (Low Attendance)
+2026CS101,Alex Johnson,BS Data Science,Semester 3,Database Management Systems,Theory,3,24.0,17.7,30.4,72.1,A,8,24,95,Pass
+2026CS101,Alex Johnson,BS Data Science,Semester 3,Statistical Methods for Data Science,Theory,3,26.3,13.7,33.3,73.3,A,8,24,85,Pass
+2026CS101,Alex Johnson,BS Data Science,Semester 3,Operating Systems,Theory,4,21.0,16.2,37.8,75.0,A,8,32,90,Pass
+2026CS101,Alex Johnson,BS Data Science,Semester 3,Python Programming Lab,Practical / Lab,2,24.1,13.1,35.3,72.5,A,8,16,90,Pass
+2026CS101,Alex Johnson,BS Data Science,Semester 3,Data Structures Lab,Practical / Lab,2,22.6,18.3,33.6,74.5,A,8,16,88,Pass
+2026CS102,Priya Sharma,BS Data Science,Semester 3,Python Programming,Theory,4,23.9,12.4,40.9,77.2,A,8,32,85,Pass
+2026CS102,Priya Sharma,BS Data Science,Semester 3,Data Structures & Algorithms,Theory,4,18.7,19.6,47.4,85.7,A+,9,36,78,Pass
+2026CS102,Priya Sharma,BS Data Science,Semester 3,Database Management Systems,Theory,3,21.0,12.8,42.3,76.1,A,8,24,90,Pass
+2026CS102,Priya Sharma,BS Data Science,Semester 3,Statistical Methods for Data Science,Theory,3,19.2,16.0,30.6,65.8,B+,7,21,95,Pass
+2026CS102,Priya Sharma,BS Data Science,Semester 3,Operating Systems,Theory,4,20.6,17.3,35.6,73.5,A,8,32,88,Pass
+2026CS102,Priya Sharma,BS Data Science,Semester 3,Python Programming Lab,Practical / Lab,2,23.5,13.5,47.5,84.5,A+,9,18,78,Pass
+2026CS102,Priya Sharma,BS Data Science,Semester 3,Data Structures Lab,Practical / Lab,2,27.4,19.2,40.8,87.4,A+,9,18,95,Pass
+2026CS103,Rahul Verma,BS Data Science,Semester 3,Python Programming,Theory,4,18.9,13.6,30.8,63.3,B+,7,28,90,Pass
+2026CS103,Rahul Verma,BS Data Science,Semester 3,Data Structures & Algorithms,Theory,4,21.9,14.2,44.9,81.0,A+,9,36,90,Pass
+2026CS103,Rahul Verma,BS Data Science,Semester 3,Database Management Systems,Theory,3,20.8,16.3,32.5,69.6,B+,7,21,78,Pass
+2026CS103,Rahul Verma,BS Data Science,Semester 3,Statistical Methods for Data Science,Theory,3,18.7,19.9,43.9,82.5,A+,9,27,85,Pass
+2026CS103,Rahul Verma,BS Data Science,Semester 3,Operating Systems,Theory,4,18.1,18.5,42.7,79.3,A,8,32,78,Pass
+2026CS103,Rahul Verma,BS Data Science,Semester 3,Python Programming Lab,Practical / Lab,2,25.7,12.6,36.5,74.8,A,8,16,85,Pass
+2026CS103,Rahul Verma,BS Data Science,Semester 3,Data Structures Lab,Practical / Lab,2,26.6,17.0,36.0,79.6,A,8,16,85,Pass
+2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Python Programming,Theory,4,21.1,14.6,43.1,78.8,A,8,32,88,Pass
+2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Data Structures & Algorithms,Theory,4,26.9,15.8,32.2,74.9,A,8,32,78,Pass
+2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Database Management Systems,Theory,3,25.6,16.5,43.9,86.0,A+,9,27,90,Pass
+2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Statistical Methods for Data Science,Theory,3,23.2,15.4,30.5,69.1,B+,7,21,85,Pass
+2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Operating Systems,Theory,4,18.3,17.1,35.7,71.1,A,8,32,88,Pass
+2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Python Programming Lab,Practical / Lab,2,27.1,14.0,37.4,78.5,A,8,16,78,Pass
+2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Data Structures Lab,Practical / Lab,2,20.3,12.6,35.2,68.1,B+,7,14,85,Pass
+2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Python Programming,Theory,4,27.3,18.5,41.4,87.2,A+,9,36,68,Detained (Low Attendance)
+2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Data Structures & Algorithms,Theory,4,26.0,13.5,46.1,85.6,A+,9,36,88,Pass
+2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Database Management Systems,Theory,3,26.1,19.2,35.7,81.0,A+,9,27,85,Pass
+2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Statistical Methods for Data Science,Theory,3,20.3,15.4,44.7,80.4,A+,9,27,68,Detained (Low Attendance)
+2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Operating Systems,Theory,4,18.1,16.1,37.5,71.7,A,8,32,85,Pass
+2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Python Programming Lab,Practical / Lab,2,19.2,14.7,47.0,80.9,A+,9,18,90,Pass
+2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Data Structures Lab,Practical / Lab,2,23.2,17.6,36.5,77.3,A,8,16,95,Pass
+2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Python Programming,Theory,4,27.6,14.0,39.0,80.6,A+,9,36,90,Pass
+2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Data Structures & Algorithms,Theory,4,20.8,12.3,41.0,74.1,A,8,32,88,Pass
+2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Database Management Systems,Theory,3,18.5,14.2,46.3,79.0,A,8,24,85,Pass
+2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Statistical Methods for Data Science,Theory,3,19.4,15.9,47.7,83.0,A+,9,27,85,Pass
+2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Operating Systems,Theory,4,24.7,18.1,34.3,77.1,A,8,32,78,Pass
+2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Python Programming Lab,Practical / Lab,2,21.7,17.1,41.4,80.2,A+,9,18,88,Pass
+2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Data Structures Lab,Practical / Lab,2,18.9,18.7,35.8,73.4,A,8,16,85,Pass
