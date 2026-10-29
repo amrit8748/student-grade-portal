@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+from catalog_data import COURSE_CATALOG
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
@@ -41,8 +42,8 @@ st.markdown("""
         margin: 6px 0 0 0;
     }
 
-    /* Card Containers & Form Borders */
-    [data-testid="stForm"], [data-testid="stVerticalBlockBorderWrapper"] {
+    /* Card Containers */
+    [data-testid="stVerticalBlockBorderWrapper"] {
         background-color: #12151c;
         border: 1px solid #282d37 !important;
         border-radius: 12px !important;
@@ -50,7 +51,7 @@ st.markdown("""
     }
 
     /* Pill-Shaped Submit Button Matching Mockup */
-    [data-testid="stFormSubmitButton"] > button {
+    .stButton > button {
         background-color: #162a64 !important;
         color: #ffffff !important;
         border: 1.5px solid #7ab8ff !important;
@@ -59,7 +60,7 @@ st.markdown("""
         font-weight: 600 !important;
         transition: 0.2s ease-in-out;
     }
-    [data-testid="stFormSubmitButton"] > button:hover {
+    .stButton > button:hover {
         background-color: #1f3a8a !important;
         border-color: #a8c7fa !important;
     }
@@ -68,21 +69,6 @@ st.markdown("""
 
 # --- DATABASE FILE PATH ---
 CSV_FILE = "saved_grades.csv"
-
-# --- PREDEFINED COURSE CATALOG ---
-# Format: "Dropdown Display Name": ("Clean Subject Name", "Course Type", Credits)
-COURSE_CATALOG = {
-    "Python Programming (Theory) - 4 Credits": ("Python Programming", "Theory", 4),
-    "Python Programming Lab (Practical) - 2 Credits": ("Python Programming Lab", "Practical / Lab", 2),
-    "Data Structures & Algorithms (Theory) - 4 Credits": ("Data Structures & Algorithms", "Theory", 4),
-    "Data Structures Lab (Practical) - 2 Credits": ("Data Structures Lab", "Practical / Lab", 2),
-    "Database Management Systems (Theory) - 3 Credits": ("Database Management Systems", "Theory", 3),
-    "DBMS Lab (Practical) - 1 Credit": ("DBMS Lab", "Practical / Lab", 1),
-    "Statistical Methods for Data Science (Theory) - 3 Credits": ("Statistical Methods for Data Science", "Theory", 3),
-    "Data Science & Visualization Lab (Practical) - 2 Credits": ("Data Science & Visualization Lab", "Practical / Lab", 2),
-    "Operating Systems (Theory) - 4 Credits": ("Operating Systems", "Theory", 4),
-    "Discrete Mathematics (Theory) - 4 Credits": ("Discrete Mathematics", "Theory", 4)
-}
 
 # --- HELPER FUNCTION: 10-POINT GRADING ENGINE ---
 def calculate_grade_and_points(marks):
@@ -105,12 +91,12 @@ def calculate_grade_and_points(marks):
 st.markdown("""
     <div class="dashboard-header">
         <h1>🎓 Grade Management Portal — Student Marks & Course Entry</h1>
-        <p>Select a student's course from the master catalog and enter their assessment marks below</p>
+        <p>Select a student's branch and semester to dynamically load their curriculum and enter marks</p>
     </div>
 """, unsafe_allow_html=True)
 
-# --- DATA ENTRY FORM (ORGANIZED IN CARD BOXES) ---
-with st.form("grade_entry_form"):
+# --- DATA ENTRY PANEL (REACTIVE CARD BOXES) ---
+with st.container(border=True):
     top_box1, top_box2 = st.columns([2, 1])
     
     # Box 1: Student Details
@@ -124,20 +110,21 @@ with st.form("grade_entry_form"):
             with col2:
                 branch = st.selectbox(
                     "Branch / Degree",
-                    ["BS Data Science", "B.Tech CSE", "B.Tech AI & ML", "B.Tech ECE", "B.Tech Mechanical"]
+                    options=list(COURSE_CATALOG.keys())
                 )
                 semester = st.selectbox(
                     "Semester",
-                    ["Semester 1", "Semester 2", "Semester 3", "Semester 4", "Semester 5", "Semester 6", "Semester 7", "Semester 8"]
+                    options=list(COURSE_CATALOG[branch].keys())
                 )
 
-    # Box 2: Course Selection & Attendance
+    # Box 2: Dynamic Course Selection & Attendance
     with top_box2:
         with st.container(border=True):
             st.markdown("#### 📚 Course & Attendance")
+            available_courses = COURSE_CATALOG[branch][semester]
             selected_course_label = st.selectbox(
-                "Select Subject (Credits Assigned Automatically)",
-                options=list(COURSE_CATALOG.keys())
+                f"Select Subject ({branch} • {semester})",
+                options=list(available_courses.keys())
             )
             attendance = st.slider(
                 "Attendance Percentage (%)",
@@ -159,15 +146,15 @@ with st.form("grade_entry_form"):
             end_sem = st.number_input("End-Sem Exam (Max 50)", min_value=0.0, max_value=50.0, value=40.0, step=0.5)
 
     # Submit Button
-    submitted = st.form_submit_button("💾 Calculate Grade & Save to Database", use_container_width=True)
+    submitted = st.button("💾 Calculate Grade & Save to Database", use_container_width=True)
 
 # --- PROCESSING & CSV STORAGE LOGIC ---
 if submitted:
     if not roll_no.strip() or not student_name.strip():
         st.error("⚠️ Please enter both the Registration/Roll Number and Student Full Name.")
     else:
-        # 1. Unpack Subject Name, Course Type, and Credits from our catalog dictionary
-        subject_name, course_type, credits = COURSE_CATALOG[selected_course_label]
+        # 1. Unpack Subject Name, Course Type, and Credits from the nested catalog
+        subject_name, course_type, credits = COURSE_CATALOG[branch][semester][selected_course_label]
 
         # 2. Compute Marks, Grade, and Credit Points
         total_marks = round(mid_sem + assignments + end_sem, 2)

@@ -1,43 +1,134 @@
 Roll_No,Student_Name,Branch,Semester,Subject,Course_Type,Credits,Mid_Sem,Assignments,End_Sem,Total_Marks,Letter_Grade,Grade_Point,Credit_Points,Attendance,Status
-2026CS101,Alex Johnson,BS Data Science,Semester 3,Python Programming,Theory,4,21.7,19.6,43.2,84.5,A+,9,36,88,Pass
-2026CS101,Alex Johnson,BS Data Science,Semester 3,Data Structures & Algorithms,Theory,4,19.6,13.2,31.0,63.8,B+,7,28,68,Detained (Low Attendance)
-2026CS101,Alex Johnson,BS Data Science,Semester 3,Database Management Systems,Theory,3,24.0,17.7,30.4,72.1,A,8,24,95,Pass
-2026CS101,Alex Johnson,BS Data Science,Semester 3,Statistical Methods for Data Science,Theory,3,26.3,13.7,33.3,73.3,A,8,24,85,Pass
-2026CS101,Alex Johnson,BS Data Science,Semester 3,Operating Systems,Theory,4,21.0,16.2,37.8,75.0,A,8,32,90,Pass
-2026CS101,Alex Johnson,BS Data Science,Semester 3,Python Programming Lab,Practical / Lab,2,24.1,13.1,35.3,72.5,A,8,16,90,Pass
-2026CS101,Alex Johnson,BS Data Science,Semester 3,Data Structures Lab,Practical / Lab,2,22.6,18.3,33.6,74.5,A,8,16,88,Pass
-2026CS102,Priya Sharma,BS Data Science,Semester 3,Python Programming,Theory,4,23.9,12.4,40.9,77.2,A,8,32,85,Pass
-2026CS102,Priya Sharma,BS Data Science,Semester 3,Data Structures & Algorithms,Theory,4,18.7,19.6,47.4,85.7,A+,9,36,78,Pass
-2026CS102,Priya Sharma,BS Data Science,Semester 3,Database Management Systems,Theory,3,21.0,12.8,42.3,76.1,A,8,24,90,Pass
-2026CS102,Priya Sharma,BS Data Science,Semester 3,Statistical Methods for Data Science,Theory,3,19.2,16.0,30.6,65.8,B+,7,21,95,Pass
-2026CS102,Priya Sharma,BS Data Science,Semester 3,Operating Systems,Theory,4,20.6,17.3,35.6,73.5,A,8,32,88,Pass
-2026CS102,Priya Sharma,BS Data Science,Semester 3,Python Programming Lab,Practical / Lab,2,23.5,13.5,47.5,84.5,A+,9,18,78,Pass
-2026CS102,Priya Sharma,BS Data Science,Semester 3,Data Structures Lab,Practical / Lab,2,27.4,19.2,40.8,87.4,A+,9,18,95,Pass
-2026CS103,Rahul Verma,BS Data Science,Semester 3,Python Programming,Theory,4,18.9,13.6,30.8,63.3,B+,7,28,90,Pass
-2026CS103,Rahul Verma,BS Data Science,Semester 3,Data Structures & Algorithms,Theory,4,21.9,14.2,44.9,81.0,A+,9,36,90,Pass
-2026CS103,Rahul Verma,BS Data Science,Semester 3,Database Management Systems,Theory,3,20.8,16.3,32.5,69.6,B+,7,21,78,Pass
-2026CS103,Rahul Verma,BS Data Science,Semester 3,Statistical Methods for Data Science,Theory,3,18.7,19.9,43.9,82.5,A+,9,27,85,Pass
-2026CS103,Rahul Verma,BS Data Science,Semester 3,Operating Systems,Theory,4,18.1,18.5,42.7,79.3,A,8,32,78,Pass
-2026CS103,Rahul Verma,BS Data Science,Semester 3,Python Programming Lab,Practical / Lab,2,25.7,12.6,36.5,74.8,A,8,16,85,Pass
-2026CS103,Rahul Verma,BS Data Science,Semester 3,Data Structures Lab,Practical / Lab,2,26.6,17.0,36.0,79.6,A,8,16,85,Pass
-2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Python Programming,Theory,4,21.1,14.6,43.1,78.8,A,8,32,88,Pass
-2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Data Structures & Algorithms,Theory,4,26.9,15.8,32.2,74.9,A,8,32,78,Pass
-2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Database Management Systems,Theory,3,25.6,16.5,43.9,86.0,A+,9,27,90,Pass
-2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Statistical Methods for Data Science,Theory,3,23.2,15.4,30.5,69.1,B+,7,21,85,Pass
-2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Operating Systems,Theory,4,18.3,17.1,35.7,71.1,A,8,32,88,Pass
-2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Python Programming Lab,Practical / Lab,2,27.1,14.0,37.4,78.5,A,8,16,78,Pass
-2026CS104,Sneha Patel,B.Tech CSE,Semester 3,Data Structures Lab,Practical / Lab,2,20.3,12.6,35.2,68.1,B+,7,14,85,Pass
-2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Python Programming,Theory,4,27.3,18.5,41.4,87.2,A+,9,36,68,Detained (Low Attendance)
-2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Data Structures & Algorithms,Theory,4,26.0,13.5,46.1,85.6,A+,9,36,88,Pass
-2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Database Management Systems,Theory,3,26.1,19.2,35.7,81.0,A+,9,27,85,Pass
-2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Statistical Methods for Data Science,Theory,3,20.3,15.4,44.7,80.4,A+,9,27,68,Detained (Low Attendance)
-2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Operating Systems,Theory,4,18.1,16.1,37.5,71.7,A,8,32,85,Pass
-2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Python Programming Lab,Practical / Lab,2,19.2,14.7,47.0,80.9,A+,9,18,90,Pass
-2026CS105,Vikram Singh,B.Tech CSE,Semester 3,Data Structures Lab,Practical / Lab,2,23.2,17.6,36.5,77.3,A,8,16,95,Pass
-2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Python Programming,Theory,4,27.6,14.0,39.0,80.6,A+,9,36,90,Pass
-2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Data Structures & Algorithms,Theory,4,20.8,12.3,41.0,74.1,A,8,32,88,Pass
-2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Database Management Systems,Theory,3,18.5,14.2,46.3,79.0,A,8,24,85,Pass
-2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Statistical Methods for Data Science,Theory,3,19.4,15.9,47.7,83.0,A+,9,27,85,Pass
-2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Operating Systems,Theory,4,24.7,18.1,34.3,77.1,A,8,32,78,Pass
-2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Python Programming Lab,Practical / Lab,2,21.7,17.1,41.4,80.2,A+,9,18,88,Pass
-2026CS106,Ananya Iyer,B.Tech AI & ML,Semester 3,Data Structures Lab,Practical / Lab,2,18.9,18.7,35.8,73.4,A,8,16,85,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 1,Calculus & Linear Algebra,Theory,4,22.5,16.2,35.0,73.7,A,8,32,84,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 1,Descriptive Statistics & Probability,Theory,4,19.0,18.5,41.2,78.7,A,8,32,92,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 1,Computational Thinking & Python,Theory,4,25.0,17.0,44.5,86.5,A+,9,36,78,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 1,Python Programming Lab,Practical / Lab,2,27.0,19.0,46.0,92.0,O,10,20,95,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 1,Statistical Computing with R Lab,Practical / Lab,2,8.0,5.0,15.0,28.0,F,0,0,62,Detained (Low Attendance)
+2026DS101,Aarav Mehta,BS Data Science,Semester 2,Multivariable Calculus & Optimization,Theory,4,18.5,14.0,33.0,65.5,B+,7,28,81,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 2,Statistical Inference & Hypothesis Testing,Theory,4,24.0,16.5,40.0,80.5,A+,9,36,90,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 2,Data Structures & Algorithms,Theory,4,21.5,19.0,36.5,77.0,A,8,32,85,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 2,Object-Oriented Programming,Theory,3,26.0,18.0,45.0,89.0,A+,9,27,94,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 2,Economics & Business Analytics,Theory,3,20.0,15.0,35.0,70.0,A,8,24,79,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 2,Data Structures Lab,Practical / Lab,2,28.0,19.5,47.0,94.5,O,10,20,96,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 2,Exploratory Data Analysis (EDA) Lab,Practical / Lab,2,22.0,16.0,39.0,77.0,A,8,16,68,Detained (Low Attendance)
+2026DS101,Aarav Mehta,BS Data Science,Semester 3,Database Management Systems,Theory,4,19.5,17.5,38.0,75.0,A,8,32,87,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 3,Discrete Mathematics & Graph Theory,Theory,4,23.0,15.0,42.0,80.0,A+,9,36,91,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 3,Regression Analysis & Modeling,Theory,4,21.0,18.5,35.5,75.0,A,8,32,83,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 3,Operating Systems & Linux Shell,Theory,3,25.5,19.0,44.0,88.5,A+,9,27,95,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 3,Web Scraping & Data Collection,Theory,3,18.0,14.5,31.0,63.5,B+,7,21,76,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 3,DBMS & SQL Lab,Practical / Lab,2,27.5,18.5,46.5,92.5,O,10,20,98,Pass
+2026DS101,Aarav Mehta,BS Data Science,Semester 3,Linux & Data Wrangling Lab,Practical / Lab,2,8.0,5.0,15.0,28.0,F,0,0,89,Fail / Backlog
+2026DS102,Diya Sharma,BS Data Science,Semester 1,Calculus & Linear Algebra,Theory,4,26.0,19.0,45.0,90.0,O,10,40,97,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 1,Descriptive Statistics & Probability,Theory,4,22.0,17.5,39.0,78.5,A,8,32,85,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 1,Computational Thinking & Python,Theory,4,24.5,18.0,43.0,85.5,A+,9,36,90,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 1,Python Programming Lab,Practical / Lab,2,28.5,19.5,48.0,96.0,O,10,20,99,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 1,Statistical Computing with R Lab,Practical / Lab,2,23.0,16.5,40.0,79.5,A,8,16,86,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 2,Multivariable Calculus & Optimization,Theory,4,20.0,15.5,35.0,70.5,A,8,32,80,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 2,Statistical Inference & Hypothesis Testing,Theory,4,25.5,18.0,44.0,87.5,A+,9,36,93,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 2,Data Structures & Algorithms,Theory,4,22.5,17.0,38.5,78.0,A,8,32,88,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 2,Object-Oriented Programming,Theory,3,27.0,19.0,46.0,92.0,O,10,30,95,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 2,Economics & Business Analytics,Theory,3,21.5,16.0,37.0,74.5,A,8,24,84,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 2,Data Structures Lab,Practical / Lab,2,29.0,19.8,48.5,97.3,O,10,20,99,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 2,Exploratory Data Analysis (EDA) Lab,Practical / Lab,2,23.5,17.0,41.0,81.5,A+,9,18,91,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 3,Database Management Systems,Theory,4,21.0,16.5,36.0,73.5,A,8,32,82,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 3,Discrete Mathematics & Graph Theory,Theory,4,24.0,18.5,43.0,85.5,A+,9,36,94,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 3,Regression Analysis & Modeling,Theory,4,22.0,17.0,39.0,78.0,A,8,32,86,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 3,Operating Systems & Linux Shell,Theory,3,8.0,5.0,15.0,28.0,F,0,0,96,Fail / Backlog
+2026DS102,Diya Sharma,BS Data Science,Semester 3,Web Scraping & Data Collection,Theory,3,19.5,15.0,34.0,68.5,B+,7,21,78,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 3,DBMS & SQL Lab,Practical / Lab,2,28.0,19.0,48.0,95.0,O,10,20,98,Pass
+2026DS102,Diya Sharma,BS Data Science,Semester 3,Linux & Data Wrangling Lab,Practical / Lab,2,21.5,16.0,38.0,75.5,A,8,16,85,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 1,Engineering Mathematics I,Theory,4,21.0,16.0,37.0,74.0,A,8,32,84,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 1,Engineering Physics,Theory,4,18.5,14.5,31.0,64.0,B+,7,28,77,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 1,Problem Solving using C,Theory,4,25.0,18.5,44.0,87.5,A+,9,36,92,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 1,C Programming Lab,Practical / Lab,2,27.0,19.0,46.5,92.5,O,10,20,96,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 1,Engineering Physics & Electrical Lab,Practical / Lab,2,22.0,15.5,39.0,76.5,A,8,16,85,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 2,Engineering Mathematics II,Theory,4,19.0,15.0,33.0,67.0,B+,7,28,79,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 2,Engineering Chemistry & Environmental Science,Theory,4,23.5,17.0,41.0,81.5,A+,9,36,89,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 2,Object-Oriented Programming with C++/Python,Theory,4,22.0,18.0,38.0,78.0,A,8,32,86,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 2,Digital Logic & Computer Design,Theory,3,26.0,19.0,45.0,90.0,O,10,30,94,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 2,Engineering Graphics & CAD,Theory,3,20.5,16.0,35.5,72.0,A,8,24,62,Detained (Low Attendance)
+2026CS201,Rohan Verma,B.Tech CSE,Semester 2,Object-Oriented Programming Lab,Practical / Lab,2,28.0,19.5,47.0,94.5,O,10,20,98,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 2,Digital Logic Design Lab,Practical / Lab,2,21.0,16.5,37.0,74.5,A,8,16,88,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 3,Data Structures & Algorithms,Theory,4,24.5,18.0,43.0,85.5,A+,9,36,91,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 3,Discrete Mathematics,Theory,4,20.0,15.0,34.0,69.0,B+,7,28,80,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 3,Computer Organization & Architecture,Theory,4,22.0,17.5,38.0,77.5,A,8,32,87,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 3,Object-Oriented Design in Java,Theory,3,8.0,5.0,15.0,28.0,F,0,0,97,Fail / Backlog
+2026CS201,Rohan Verma,B.Tech CSE,Semester 3,Universal Human Values & Ethics,Theory,3,21.0,16.0,36.0,73.0,A,8,24,83,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 3,Data Structures & Algorithms Lab,Practical / Lab,2,28.5,19.8,48.0,96.3,O,10,20,99,Pass
+2026CS201,Rohan Verma,B.Tech CSE,Semester 3,Java Programming & COA Lab,Practical / Lab,2,22.5,17.0,40.0,79.5,A,8,16,89,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 1,Engineering Mathematics I,Theory,4,25.0,18.5,44.0,87.5,A+,9,36,93,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 1,Engineering Physics,Theory,4,21.0,16.0,36.0,73.0,A,8,32,82,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 1,Problem Solving using C,Theory,4,27.0,19.5,47.0,93.5,O,10,40,98,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 1,C Programming Lab,Practical / Lab,2,28.0,19.0,48.0,95.0,O,10,20,97,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 1,Engineering Physics & Electrical Lab,Practical / Lab,2,23.0,17.0,41.0,81.0,A+,9,18,90,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 2,Engineering Mathematics II,Theory,4,22.0,16.5,39.0,77.5,A,8,32,86,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 2,Engineering Chemistry & Environmental Science,Theory,4,24.0,18.0,42.0,84.0,A+,9,36,92,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 2,Object-Oriented Programming with C++/Python,Theory,4,26.5,19.0,46.0,91.5,O,10,40,95,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 2,Digital Logic & Computer Design,Theory,3,21.0,15.5,35.0,71.5,A,8,24,81,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 2,Engineering Graphics & CAD,Theory,3,23.5,17.5,40.0,81.0,A+,9,27,90,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 2,Object-Oriented Programming Lab,Practical / Lab,2,29.0,19.9,49.0,97.9,O,10,20,99,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 2,Digital Logic Design Lab,Practical / Lab,2,24.0,18.0,42.0,84.0,A+,9,18,92,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 3,Data Structures & Algorithms,Theory,4,27.0,19.0,47.0,93.0,O,10,40,96,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 3,Discrete Mathematics,Theory,4,23.0,16.5,40.0,79.5,A,8,32,88,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 3,Computer Organization & Architecture,Theory,4,25.0,18.0,44.0,87.0,A+,9,36,93,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 3,Object-Oriented Design in Java,Theory,3,28.0,19.5,48.5,96.0,O,10,30,99,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 3,Universal Human Values & Ethics,Theory,3,22.0,16.0,38.0,76.0,A,8,24,85,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 3,Data Structures & Algorithms Lab,Practical / Lab,2,29.5,20.0,49.5,99.0,O,10,20,100,Pass
+2026CS202,Neha Gupta,B.Tech CSE,Semester 3,Java Programming & COA Lab,Practical / Lab,2,24.5,18.5,43.0,86.0,A+,9,18,62,Detained (Low Attendance)
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 1,Linear Algebra & Calculus,Theory,4,22.0,17.0,38.0,77.0,A,8,32,86,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 1,Engineering Physics,Theory,4,19.5,15.0,33.0,67.5,B+,7,28,79,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 1,Programming for Python & C,Theory,4,26.0,18.5,45.0,89.5,A+,9,36,94,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 1,Python & C Programming Lab,Practical / Lab,2,28.0,19.2,47.5,94.7,O,10,20,98,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 1,Engineering Physics Lab,Practical / Lab,2,8.0,5.0,15.0,28.0,F,0,0,84,Fail / Backlog
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 2,Probability & Statistical Foundations for AI,Theory,4,25.0,18.0,43.0,86.0,A+,9,36,92,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 2,Discrete Mathematical Structures,Theory,4,20.5,15.5,35.0,71.0,A,8,32,81,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 2,Data Structures,Theory,4,23.0,17.0,40.0,80.0,A+,9,36,88,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 2,Digital Electronics & Microprocessors,Theory,3,27.0,19.0,46.0,92.0,O,10,30,95,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 2,Environmental Science & Sustainability,Theory,3,21.0,16.0,36.5,73.5,A,8,24,83,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 2,Data Structures Lab,Practical / Lab,2,28.5,19.5,48.0,96.0,O,10,20,99,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 2,Numerical & Statistical Methods Lab,Practical / Lab,2,22.0,16.5,38.5,77.0,A,8,16,62,Detained (Low Attendance)
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 3,Artificial Intelligence: Principles & Techniques,Theory,4,26.0,19.0,46.5,91.5,O,10,40,96,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 3,Design & Analysis of Algorithms,Theory,4,21.5,16.0,37.0,74.5,A,8,32,84,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 3,Database Management Systems,Theory,4,24.0,17.5,42.0,83.5,A+,9,36,90,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 3,Computer Organization & Architecture,Theory,3,27.5,19.2,48.0,94.7,O,10,30,98,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 3,Optimization Techniques for ML,Theory,3,22.5,16.5,39.0,78.0,A,8,24,88,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 3,AI Search & Heuristics Lab,Practical / Lab,2,29.0,19.8,49.0,97.8,O,10,20,99,Pass
+2026AI301,Kabir Joshi,B.Tech AI & ML,Semester 3,DBMS & SQL Lab,Practical / Lab,2,23.0,17.0,41.0,81.0,A+,9,18,91,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 1,Engineering Mathematics I,Theory,4,23.0,17.0,40.0,80.0,A+,9,36,89,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 1,Engineering Physics,Theory,4,20.0,15.5,35.0,70.5,A,8,32,81,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 1,Basic Electrical Engineering,Theory,4,25.5,18.0,44.0,87.5,A+,9,36,93,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 1,Basic Electrical & C Programming Lab,Practical / Lab,2,28.0,19.2,47.0,94.2,O,10,20,97,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 1,Engineering Physics Lab,Practical / Lab,2,21.5,16.0,38.0,75.5,A,8,16,86,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 2,Engineering Mathematics II,Theory,4,21.0,16.0,37.0,74.0,A,8,32,84,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 2,Engineering Chemistry,Theory,4,24.5,17.5,42.0,84.0,A+,9,36,91,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 2,Semiconductor Physics & Electronic Devices,Theory,4,26.0,19.0,46.0,91.0,O,10,40,95,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 2,Network Theory & Circuit Analysis,Theory,3,22.0,16.5,39.0,77.5,A,8,24,87,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 2,Professional English Communication,Theory,3,27.0,19.5,48.0,94.5,O,10,30,98,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 2,Electronic Devices & Circuits Lab,Practical / Lab,2,28.5,19.8,48.5,96.8,O,10,20,99,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 2,Network Analysis & Simulation Lab,Practical / Lab,2,23.0,17.0,41.0,81.0,A+,9,18,62,Detained (Low Attendance)
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 3,Analog Electronic Circuits,Theory,4,25.0,18.0,43.5,86.5,A+,9,36,92,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 3,Digital System Design,Theory,4,21.5,16.0,38.0,75.5,A,8,32,85,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 3,Signals and Systems,Theory,4,24.0,17.5,42.0,83.5,A+,9,36,90,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 3,Electromagnetic Field Theory,Theory,4,20.0,15.0,34.0,69.0,B+,7,28,79,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 3,Data Structures using Python/C++,Theory,3,27.0,19.0,47.0,93.0,O,10,30,96,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 3,Analog Electronics Lab,Practical / Lab,2,28.0,19.5,48.0,95.5,O,10,20,98,Pass
+2026EC401,Ananya Iyer,B.Tech ECE,Semester 3,Digital System Design (Verilog/VHDL) Lab,Practical / Lab,2,8.0,5.0,15.0,28.0,F,0,0,88,Fail / Backlog
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 1,Engineering Mathematics I,Theory,4,20.5,15.5,36.0,72.0,A,8,32,82,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 1,Engineering Physics,Theory,4,18.0,14.0,30.0,62.0,B+,7,28,76,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 1,Engineering Mechanics (Statics & Dynamics),Theory,4,24.0,17.5,41.0,82.5,A+,9,36,89,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 1,Computer-Aided Engineering Graphics Lab,Practical / Lab,2,27.0,19.0,46.0,92.0,O,10,20,97,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 1,Workshop & Manufacturing Practices Lab,Practical / Lab,2,21.0,16.0,37.5,74.5,A,8,16,85,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 2,Engineering Mathematics II,Theory,4,22.0,16.5,38.0,76.5,A,8,32,86,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 2,Engineering Chemistry,Theory,4,19.5,15.0,33.5,68.0,B+,7,28,80,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 2,Engineering Thermodynamics,Theory,4,25.0,18.0,44.0,87.0,A+,9,36,93,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 2,Materials Science & Metallurgy,Theory,3,21.5,16.0,37.0,74.5,A,8,24,84,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 2,Problem Solving with Python/MATLAB,Theory,3,27.5,19.2,48.0,94.7,O,10,30,98,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 2,Materials Testing & Metallurgy Lab,Practical / Lab,2,28.0,19.5,47.5,95.0,O,10,20,99,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 2,Python/MATLAB Computation Lab,Practical / Lab,2,23.0,17.0,40.5,80.5,A+,9,18,62,Detained (Low Attendance)
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 3,Mechanics of Solids (Strength of Materials),Theory,4,24.0,17.5,41.0,82.5,A+,9,36,90,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 3,Fluid Mechanics & Hydraulic Machines,Theory,4,21.0,16.0,37.0,74.0,A,8,32,85,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 3,Applied Thermodynamics,Theory,4,26.0,19.0,46.0,91.0,O,10,40,95,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 3,Kinematics of Machinery,Theory,4,19.0,14.5,32.0,65.5,B+,7,28,78,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 3,Manufacturing Processes I (Casting & Welding),Theory,3,22.5,16.5,39.0,78.0,A,8,24,87,Pass
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 3,Strength of Materials Lab,Practical / Lab,2,8.0,5.0,15.0,28.0,F,0,0,99,Fail / Backlog
+2026ME501,Vikram Singh,B.Tech Mechanical,Semester 3,Fluid Mechanics & Machinery Lab,Practical / Lab,2,22.0,16.0,38.0,76.0,A,8,16,86,Pass

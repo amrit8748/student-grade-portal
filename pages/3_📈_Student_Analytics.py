@@ -77,24 +77,55 @@ if df.empty:
 with st.container(border=True):
     st.subheader("🔍 Select Student Record")
 
-    # Create a clean "Roll_No - Student_Name" label for the dropdown
     df["Student_Label"] = df["Roll_No"].astype(str) + " - " + df["Student_Name"]
-    unique_students = sorted(df["Student_Label"].unique())
 
-    sel_col1, sel_col2 = st.columns([2, 1])
+    # Line 1: Branch / Degree and Semester side-by-side
+    sel_col1, sel_col2 = st.columns(2)
     with sel_col1:
-        selected_student_label = st.selectbox("Choose Student (Roll No & Name)", options=unique_students)
+        branches = sorted(df["Branch"].dropna().unique())
+        selected_branch = st.selectbox(
+            "Branch / Degree",
+            options=branches,
+            index=None,
+            placeholder="Select Branch / Degree..."
+        )
 
-    # Extract the selected Roll_No and filter rows for that student
-    selected_roll = selected_student_label.split(" - ")[0]
-    student_df = df[df["Roll_No"].astype(str) == selected_roll]
+    branch_df = df[df["Branch"] == selected_branch] if selected_branch else df
 
     with sel_col2:
-        available_semesters = sorted(student_df["Semester"].unique())
-        selected_semester = st.selectbox("Choose Semester", options=available_semesters)
+        semesters = sorted(branch_df["Semester"].dropna().unique())
+        selected_semester = st.selectbox(
+            "Semester",
+            options=semesters,
+            index=None,
+            placeholder="Select Semester..."
+        )
+
+    filtered_selector_df = (
+        branch_df[branch_df["Semester"] == selected_semester]
+        if selected_semester else branch_df
+    )
+
+    # Line 2: Student Name / Roll No box on the next line
+    unique_students = sorted(filtered_selector_df["Student_Label"].dropna().unique())
+    selected_student_label = st.selectbox(
+        "Student Name / Roll Number",
+        options=unique_students,
+        index=None,
+        placeholder="Select Student (Roll No & Name)..."
+    )
+
+# Keep the rest of the page empty until all 3 are selected
+if not (selected_branch and selected_semester and selected_student_label):
+    st.info("Select a **Branch**, **Semester**, and **Student** above to view their Marksheet and Analytics.")
+    st.stop()
 
 # Filter final dataset for the selected student AND semester
-sem_df = student_df[student_df["Semester"] == selected_semester].copy()
+selected_roll = selected_student_label.split(" - ")[0]
+sem_df = df[
+    (df["Roll_No"].astype(str) == selected_roll) &
+    (df["Semester"] == selected_semester)
+].copy()
 
 # --- 2. STUDENT PROFILE & SGPA SUMMARY CARD (NESTED METRIC CARDS) ---
 student_name = sem_df["Student_Name"].iloc[0]
@@ -110,7 +141,7 @@ avg_attendance = round(sem_df["Attendance"].mean(), 1)
 
 # Check if student passed all subjects in this semester
 active_backlogs = int((sem_df["Status"] != "Pass").sum())
-overall_status = "PASS" if active_backlogs == 0 else f"⚠️ {active_backlogs} BACKLOG / DETAINED"
+overall_status = "PASS" if active_backlogs == 0 else f" {active_backlogs} BACKLOG"
 
 with st.container(border=True):
     # Profile Header Banner
@@ -151,21 +182,44 @@ with st.container(border=True):
     )
 
 # --- 4. VISUAL PERFORMANCE ANALYTICS (SIDE-BY-SIDE CARD BOXES) ---
+import altair as alt
+
 chart_col1, chart_col2 = st.columns(2)
 
 with chart_col1:
     with st.container(border=True):
         st.markdown("##### 🎯 Assessment Split by Subject (Max 100)")
-        # Stacked bar chart showing Mid_Sem + Assignments + End_Sem adding up to Total_Marks
-        marks_chart_df = sem_df.set_index("Subject")[["Mid_Sem", "Assignments", "End_Sem"]]
-        st.bar_chart(marks_chart_df)
+        marks_melted = sem_df.melt(
+            id_vars=["Subject"],
+            value_vars=["Mid_Sem", "Assignments", "End_Sem"],
+            var_name="Component",
+            value_name="Marks"
+        )
+        marks_chart = (
+            alt.Chart(marks_melted)
+            .mark_bar()
+            .encode(
+                x=alt.X("Subject:N", title=None, axis=alt.Axis(labelAngle=-90)),
+                y=alt.Y("Marks:Q", scale=alt.Scale(domain=[0, 100]), title="Marks (Out of 100)"),
+                color=alt.Color("Component:N", title="Assessment")
+            )
+            .properties(height=320)
+        )
+        st.altair_chart(marks_chart, use_container_width=True)
 
 with chart_col2:
     with st.container(border=True):
         st.markdown("##### 📅 Attendance Percentage by Subject (%)")
-        attendance_chart_df = sem_df.set_index("Subject")[["Attendance"]]
-        st.bar_chart(attendance_chart_df)
-
+        att_chart = (
+            alt.Chart(sem_df)
+            .mark_bar(color="#7ab8ff")
+            .encode(
+                x=alt.X("Subject:N", title=None, axis=alt.Axis(labelAngle=-90)),
+                y=alt.Y("Attendance:Q", scale=alt.Scale(domain=[0, 100]), title="Attendance (%)")
+            )
+            .properties(height=320)
+        )
+        st.altair_chart(att_chart, use_container_width=True)
 # --- 5. GRADE DISTRIBUTION SUMMARY (CARD BOX) ---
 with st.container(border=True):
     st.markdown("##### 🏅 Letter Grade Tally (This Semester)")
