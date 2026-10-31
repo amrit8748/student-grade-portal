@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- CUSTOM UI STYLING (DARK DASHBOARD THEME & CARDS) ---
+# --- CUSTOM UI ---
 st.markdown("""
     <style>
     /* Main Page Background */
@@ -177,7 +177,7 @@ with summary_container:
         with st.container(border=True):
             st.metric("Backlog / Fails", backlog_fail_count)
 
-# --- 5. MASTER DATA TABLE & EXPORT (CARD BOX) ---
+# --- 5. MASTER DATA TABLE & EXPORT  ---
 with st.container(border=True):
     header_col, download_col = st.columns([3, 1])
     with header_col:

@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- CUSTOM UI STYLING (DARK DASHBOARD THEME & CARDS) ---
+# --- CUSTOM UI  ---
 st.markdown("""
     <style>
     /* Main Page Background */
@@ -54,7 +54,7 @@ st.markdown("""
 # --- DATABASE FILE PATH ---
 CSV_FILE = "saved_grades.csv"
 
-# --- CENTER-ALIGNED PAGE HEADER BANNER ---
+# ---  PAGE HEADER BANNER ---
 st.markdown("""
     <div class="dashboard-header">
         <h1>📈 Student Performance Analytics & Official Marksheet</h1>
@@ -73,7 +73,7 @@ if df.empty:
     st.warning("⚠️ The database is currently empty. Add student records on Page 1 to view analytics.")
     st.stop()
 
-# --- 1. TOP STUDENT & SEMESTER SELECTOR BAR (CARD BOX) ---
+# --- 1. TOP STUDENT & SEMESTER SELECTOR BAR ---
 with st.container(border=True):
     st.subheader("🔍 Select Student Record")
 
@@ -163,7 +163,7 @@ with st.container(border=True):
         with st.container(border=True):
             st.metric("Semester Standing", overall_status)
 
-# --- 3. DETAILED SEMESTER MARKSHEET TABLE (CARD BOX) ---
+# --- 3. DETAILED SEMESTER MARKSHEET TABLE  ---
 with st.container(border=True):
     st.subheader("📋 Subject-Wise Grade Breakdown")
 
@@ -181,7 +181,7 @@ with st.container(border=True):
         hide_index=True
     )
 
-# --- 4. VISUAL PERFORMANCE ANALYTICS (SIDE-BY-SIDE CARD BOXES) ---
+# --- 4. VISUAL PERFORMANCE ANALYTICS  ---
 import altair as alt
 
 chart_col1, chart_col2 = st.columns(2)
@@ -220,7 +220,7 @@ with chart_col2:
             .properties(height=320)
         )
         st.altair_chart(att_chart, use_container_width=True)
-# --- 5. GRADE DISTRIBUTION SUMMARY (CARD BOX) ---
+# --- 5. GRADE DISTRIBUTION SUMMARY  ---
 with st.container(border=True):
     st.markdown("##### 🏅 Letter Grade Tally (This Semester)")
     grade_counts = sem_df["Letter_Grade"].value_counts().reset_index()

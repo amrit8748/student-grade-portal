@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- CUSTOM UI STYLING (DARK DASHBOARD THEME & CARDS) ---
+# --- CUSTOM UI  ---
 st.markdown("""
     <style>
     /* Main Page Background */
@@ -70,7 +70,7 @@ st.markdown("""
 # --- DATABASE FILE PATH ---
 CSV_FILE = "saved_grades.csv"
 
-# --- HELPER FUNCTION: 10-POINT GRADING ENGINE ---
+# --- HELPER FUNCTION: 10-POINT GRADING ---
 def calculate_grade_and_points(marks):
     if marks >= 90:
         return "O", 10
@@ -87,15 +87,15 @@ def calculate_grade_and_points(marks):
     else:
         return "F", 0
 
-# --- CENTER-ALIGNED PAGE HEADER BANNER ---
+# --- PAGE HEADER BANNER ---
 st.markdown("""
     <div class="dashboard-header">
         <h1>🎓 Grade Management Portal — Student Marks & Course Entry</h1>
-        <p>Select a student's branch and semester from the catalog and enter assessment marks</p>
+        <p>Select a student's branch and semester from the catalog and enter their assessment marks</p>
     </div>
 """, unsafe_allow_html=True)
 
-# --- DATA ENTRY PANEL (REACTIVE CARD BOXES) ---
+# --- DATA ENTRY PANEL ---
 with st.container(border=True):
     top_box1, top_box2 = st.columns([2, 1])
     
