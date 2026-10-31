@@ -15,9 +15,9 @@ data_entry_page = st.Page(
     default=True
 )
 
-roster_page = st.Page(
-    page="pages/2_📊_Student_Roster.py", 
-    title="Student Roster", 
+record_page = st.Page(
+    page="pages/2_📊_Student_Records.py", 
+    title="Student Records", 
     icon="📊"
 )
 
@@ -28,7 +28,7 @@ analytics_page = st.Page(
  )
 
 # --- SET UP NAVIGATION BAR ---
-pg = st.navigation([data_entry_page, roster_page, analytics_page])
+pg = st.navigation([data_entry_page, record_page, analytics_page])
 
 # --- RUN THE SELECTED PAGE ---
 pg.run()

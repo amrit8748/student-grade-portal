@@ -4,7 +4,7 @@ import os
 
 # --- PAGE CONFIGURATION ---
 st.set_page_config(
-    page_title="Student Roster | Grade Portal",
+    page_title="Student Records | Grade Portal",
     page_icon="📊",
     layout="wide"
 )
@@ -69,11 +69,11 @@ st.markdown("""
 # --- DATABASE FILE PATH ---
 CSV_FILE = "saved_grades.csv"
 
-# --- CENTER-ALIGNED PAGE HEADER BANNER ---
+# --- PAGE HEADER BANNER ---
 st.markdown("""
     <div class="dashboard-header">
-        <h1>📊 Master Student Roster & Course Records</h1>
-        <p>Filter, search, and audit student course entries across branches and semesters</p>
+        <h1>📊 Student and Course Records</h1>
+        <p>Filter and search student course entries across branches and semesters</p>
     </div>
 """, unsafe_allow_html=True)
 
@@ -86,16 +86,16 @@ if not os.path.exists(CSV_FILE):
 df = pd.read_csv(CSV_FILE)
 
 if df.empty:
-    st.warning("⚠️ The database is currently empty. Add student records on Page 1 to view the roster.")
+    st.warning("⚠️ The database is currently empty. Add student records on Page 1 to view the record.")
     st.stop()
 
-# --- 1. RESERVE TOP SUMMARY BAR CONTAINER ---
+# --- 1. SUMMARY BAR CONTAINER ---
 # This keeps the summary bar visually at the top while allowing filters below to control its numbers
 summary_container = st.container(border=True)
 
-# --- 2. SEARCH & FILTER CONTROLS (CARD BOX) ---
+# --- 2. SEARCH & FILTER CONTROLS ---
 with st.container(border=True):
-    st.subheader("🔍 Filter Roster")
+    st.subheader("🔍 Filter Record")
 
     f_col1, f_col2, f_col3 = st.columns([2, 1, 1])
     with f_col1:
@@ -156,7 +156,7 @@ if selected_status:
 
 # --- 4. POPULATE TOP DYNAMIC SUMMARY BAR (NESTED METRIC CARDS) ---
 with summary_container:
-    st.subheader("📌 Live Cohort Summary")
+    st.subheader("📌 Record Summary")
     
     total_unique_students = filtered_df["Roll_No"].nunique()
     total_subject_entries = len(filtered_df)
@@ -185,9 +185,9 @@ with st.container(border=True):
     with download_col:
         csv_export = filtered_df.to_csv(index=False).encode("utf-8")
         st.download_button(
-            label="⬇️ Download Filtered CSV",
+            label="⬇️ Download CSV",
             data=csv_export,
-            file_name="filtered_student_roster.csv",
+            file_name="filtered_student_record.csv",
             mime="text/csv",
             use_container_width=True
         )

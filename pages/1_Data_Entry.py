@@ -91,7 +91,7 @@ def calculate_grade_and_points(marks):
 st.markdown("""
     <div class="dashboard-header">
         <h1>🎓 Grade Management Portal — Student Marks & Course Entry</h1>
-        <p>Select a student's branch and semester to dynamically load their curriculum and enter marks</p>
+        <p>Select a student's branch and semester from the catalog and enter assessment marks</p>
     </div>
 """, unsafe_allow_html=True)
 
